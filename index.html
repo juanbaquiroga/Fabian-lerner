@@ -3,21 +3,259 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Fabián Lerner</title>
   </head>
   <body>
     <span id="top"></span>
-    <main class="main">
-        <div class="ellipse"></div>
-        <div class="main-container">
-            <div class="main-text-container">
-                <h1>Dr. <span>Fabián Lerner</span></h1>
-            </div>
-            <div class="main-img-container">
-                <img src="/media/FLerner_14-removebg-preview.png" alt="Dr. Fabián Lerner">
-            </div>
+    <div class="over-header">
+      <div class="container1">
+        <i class="icon"></i>
+        <p class="text">calle cualquiera 123 - Lunes a viernes de 00 a 24Hs</p>
+      </div>
+      <div class="container2">
+        <div class="tel">
+          <i class="icon"></i>
+          <p class="text">(+54-11)0000-0000</p>
         </div>
+        <div class="social">
+          <i class="icon"></i>
+          <i class="icon"></i>
+          <i class="icon"></i>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+        <a class="logo" href="#top">Dr. <span>Fabián Lerner</span></a>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a class="link" href="#mini-bio">Mini Bio</a></li>
+                <li><a class="link" href="#glaucoma">¿Qué es el glaucoma?</a></li>
+                <li><a class="link" href="#">Prensa</a></li>
+            </ul>
+            <a href="#contacto" class="button-contacto">Contacto</a>
+        </nav>
+    </header>
+    <main class="main">
+      <img class="ellipse" src="./media/main.png"></img>
+      <div class="main-container">
+        <div class="main-text-container">
+          <h1 class="main-title">Dr. <span class="title-span">Fabián Lerner</span></h1>
+          <p class="text">
+            Profesor Titular de Oftalmología, líder en glaucoma, con destacada
+            trayectoria académica y reconocimientos internacionales.
+          </p>
+          <a href="#contacto" class="button-contacto">Contacto</a>
+        </div>
+        <div class="main-img-container">
+          <img
+            src="./media/FLerner_14-removebg-preview.png"
+            alt="Dr. Fabián Lerner"
+            class="main-img"
+          />
+        </div>
+      </div>
     </main>
+    <section class="gallery">
+      <div class="slider">
+        <div class="slider-track">
+          <div class="slide slide-large">
+            <img src="./media/gallery/1.png" alt="" class="image">
+            <p class="text">Asociación Mundial de Glaucoma</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/2.png" alt="" class="image">
+            <p class="text">Operando en Armenia</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/3.png" alt="" class="image">
+            <p class="text">Por recibir el premio de la Academia Nacional de Medicina</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/4.png" alt="" class="image">
+            <p class="text">Sociedad Española de Glaucoma - conferencia magistral</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/5.png" alt="" class="image">
+            <p class="text">Congreso Mundial de Glaucoma 2019</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/6.png" alt="" class="image">
+            <p class="text">Congreso Mundial de Glaucoma - Paris 2011</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/7.png" alt="" class="image">
+            <p class="text">Santiago de chile 2023</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/8.png" alt="" class="image">
+            <p class="text">Junto al Dr. Roger Hitchings</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/1.png" alt="" class="image">
+            <p class="text">Asociación Mundial de Glaucoma</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/2.png" alt="" class="image">
+            <p class="text">Operando en Armenia</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/3.png" alt="" class="image">
+            <p class="text">Por recibir el premio de la Academia Nacional de Medicina</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/4.png" alt="" class="image">
+            <p class="text">Sociedad Española de Glaucoma - conferencia magistral</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/5.png" alt="" class="image">
+            <p class="text">Congreso Mundial de Glaucoma 2019</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/6.png" alt="" class="image">
+            <p class="text">Congreso Mundial de Glaucoma - Paris 2011</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/7.png" alt="" class="image">
+            <p class="text">Santiago de chile 2023</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/8.png" alt="" class="image">
+            <p class="text">Junto al Dr. Roger Hitchings</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="glaucoma" id="glaucoma">
+      <div class="glaucoma-container">
+        <div class="text-container">
+          <h3 class="subtitle">¿Qué es el glaucoma?</h3>
+          <p class="text">Es un grupo de enfermedades en el que se produce un daño característico en el nervio óptico (el nervio de la visión). En la mayoría de los casos ocurre asociado a una presión elevada dentro del ojo. El daño es permanente e irreversible. Inicialmente no da síntomas y, si no se trata, puede llevar a la ceguera. <b>El glaucoma es la segunda causa más frecuente de ceguera en el mundo, y la primera irreversible.</b></p>
+        </div>
+        <div class="video-container">
+          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/20W2OD1OpNU?si=9QElNWoTFXYBWeYK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="mini-bio" id="mini-bio">
+      <div class="container">
+        <h2 class="subtitle">Mini Bio</h2>
+        <div class="text-container">
+          <div class="side-container">
+            <p class="text">El Dr. S. Fabián Lerner es Profesor Titular de Oftalmología en la Facultad de Ciencias Médicas de la Universidad Favaloro; y Director y Profesor de la Diplomatura Universitaria Superior en Glaucoma de la Universidad Católica Argentina.</p>
+            <p class="text">Es Ex Presidente de la Asociación Mundial de Glaucoma, la Sociedad Panamericana de Glaucoma, la Sociedad Argentina de Oftalmología y la Asociación Argentina de Glaucoma. Fue co-director del programa científico de los Congresos Mundiales de Glaucoma 2013 (Vancouver, Canadá) y 2015 (Hong Kong). Es, actualmente, miembro del comité ejecutivo de la Asociación Mundial de Glaucoma. Ha sido designado Miembro de Honor de la Sociedad Argentina de Oftalmología.</p>
+            <p class="text">El Dr S. Fabián Lerner se graduó con diploma de honor en la Facultad de Medicina de la Universidad de Buenos Aires. Luego de finalizada su residencia en el Hospital Santa Lucía en Buenos Aires, obtuvo la beca George and Rosalie Hearst Fellowship, otorgada por la Fundación Hearst y la Universidad de California en San Francisco, EEUU, donde cumplió su fellowship. Ganó la Beca Lemuel Nazar que cumplió en el Bascom Palmer Eye Institute en la Universidad de Miami y pasó una rotación invitado en el Hamilton Glaucoma Center del Departamento de Oftalmología de la Universidad de California, San Diego, EEUU.</p>
+            <p class="text">Es autor o co-autor de 26 libros, incluyendo “Cirugía de Glaucoma” de Lerner y Parrish, publicado en Español por Edikamed, Barcelona; y en Inglés (Glaucoma Surgery) por Lippincott, Williams and Wilkins. Este último libro fue “best seller” en la Academia Norteamericana de Oftalmología el año de su lanzamiento.</p>
+          </div>
+          <div class="side-container">
+            <p class="text">Fue colaborador en la segunda edición de “Glaucoma Surgical Techniques” publicado por la Academia Americana de Oftalmología. Es co-autor del libro de Consenso de Cirugía de Glaucoma de la Asociación Mundial de Glaucoma y del libro recientemente publicado “Glaucoma”, de Lerner, García Feijóo y Pablo Júlvez.</p>
+            <p class="text">Es autor o co-autor de papers y abstracts en revistas internacionales de alto impacto, incluyendo  “The New England Journal of Medicine”, “Nature Genetics”, “Ophthalmology”, “Archives of Ophthalmology”, “American Journal of Ophthalmology”, “Eye”, “Acta Ophthalmologica”, “IOVS”, “Journal of Glaucoma” entre otras, fundamentalmente en el área de glaucoma.</p>
+            <p class="text">Es revisor para varias revistas internacionales. Miembro de la junta editorial del Journal of Glaucoma, del Journal for Modeling and Artificial Intelligence in Ophthalmology, y del Board of Editors de International Glaucoma Review. Es miembro del Glaucoma Task Force del Consejo Internacional de Oftalmología.</p>
+            <p class="text">Obtuvo el premio Adolfo Noceti-Atilio Tiscornia de la Academia Nacional de Medicina en 3 ocasiones. En 2003 obtuvo el “Achievement Award” de la Academia Americana de Oftalmología. Ganó el primer premio de investigación Panamericano Allergan y el Premio Pedro Lagleyze de la Universidad de Buenos Aires, entre otros premios. Ha dictado conferencias (varias de ellas magistrales) en múltiples congresos, sociedades científicas y universidades alrededor del mundo. Fue conferencista en el Día de la Subespecialidad de Glaucoma de la Academia Americana de Oftalmología en 4 ediciones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="prensa" id="prensa">
+      <h2 class="subtitle">Prensa</h2>
+      <div class="container">
+        <div class="swiper-button-prev">
+          <img class="img" src="./media/icons/arrow_back_ios_FILL0_wght400_GRAD0_opsz24.svg" alt="arrow back">
+        </div> 
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="card-img" src="./media/cards/1.png" alt="¿Qué es el glaucoma? entrevista">
+              <div class="card-body">
+                <div class="text-container">
+                  <h5 class="card-title">¿Qué es el glaucoma?</h5>
+                  <p class="card-text">Charla dirigida a la comunidad: zoom del Dr. Fabián Lerner</p>
+                </div>
+                <a class="card-button" href="#">Ver mas</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="card-img" src="./media/cards/2.png" alt="El glaucoma. Su tratamiento y prevención. video">
+              <div class="card-body">
+                <div class="text-container">
+                  <h5 class="card-title">El glaucoma. Su tratamiento y prevención.</h5>
+                  <p class="card-text">Ciclo de charlas SIDUSTIME - Dr. Prof. Fabián Lerner</p>
+                </div>
+                <a class="card-button" href="#">Ver mas</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="card-img" src="./media/cards/3.png" alt="Presentación del libro Glaucoma">
+              <div class="card-body">
+                <div class="text-container">
+                  <h5 class="card-title">Presentación del libro Glaucoma</h5>
+                  <p class="card-text">Glaucoma es la primera obra en español que ofrece una amplia visión acerca de este tema complejo y apasionante.</p>
+                </div>
+                <a class="card-button" href="#">Ver mas</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="card-img" src="./media/cards/1.png" alt="¿Qué es el glaucoma? entrevista">
+              <div class="card-body">
+                <div class="text-container">
+                  <h5 class="card-title">¿Qué es el glaucoma?</h5>
+                  <p class="card-text">Charla dirigida a la comunidad: zoom del Dr. Fabián Lerner</p>
+                </div>
+                <a class="card-button" href="#">Ver mas</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="swiper-button-next">
+          <img class="img" src="./media/icons/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.svg" alt="arrow forward">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="box1 footer-box">
+          <div class="box1-title">
+            <h4>Dr. Fabián Lerner</h4>
+            <p>Medico oftalmólogo</p>
+          </div>
+          <div>
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="box2 footer-box" id="contacto">
+          <h4 class="footer-title">Contacto</h4>
+          <div class="medios">
+            <div>
+              <i></i>
+              <p>email@gmail.com</p>
+            </div>
+            <div>
+              <i></i>
+              <p>(+54-11)0000-0000</p>
+            </div>
+            <div>
+              <i></i>
+              <p>direccion 123</p>
+            </div>
+            <div>
+              <i></i>
+              <p>Lunes a viernes de 10 a 22Hs</p>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="box3 footer-box">
+          <h4 class="footer-title">Consultorio</h4>
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168881863096!2d-58.38414532344996!3d-34.603734457500416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1712262187230!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
 </html>
