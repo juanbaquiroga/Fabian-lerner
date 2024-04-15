@@ -3,39 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Fabián Lerner</title>
   </head>
   <body>
     <span id="top"></span>
     <div class="over-header">
-      <div class="container1">
-        <i class="icon"></i>
-        <p class="text">calle cualquiera 123 - Lunes a viernes de 00 a 24Hs</p>
+      <div class="container">
+        <div class="direction">
+          <i class='bx bxs-map icon-header' ></i>
+          <p class="text">calle cualquiera 123 - Lunes a viernes de 00 a 24Hs</p>
+        </div>
       </div>
-      <div class="container2">
+      <div class="container">
         <div class="tel">
-          <i class="icon"></i>
+          <i class='bx bxs-phone icon-header'></i>
           <p class="text">(+54-11)0000-0000</p>
         </div>
         <div class="social">
-          <i class="icon"></i>
-          <i class="icon"></i>
-          <i class="icon"></i>
+          <a href="" class="link"><i class='bx bxl-facebook-square icon-header'></i></a>
+          <a href="" class="link"><i class='bx bxl-instagram-alt icon-header'></i></a>
+          <a href="" class="link"><i class='bx bxl-linkedin-square icon-header'></i></a>
         </div>
       </div>
     </div>
-    <header class="header">
-        <a class="logo" href="#top">Dr. <span>Fabián Lerner</span></a>
-        <nav class="nav">
+    <header class="header" id="header">
+        <a class="logo" href="#top" onclick="closeNav()">Dr. <span class="color">Fabián Lerner</span></a>
+        <div class="topContainer">
+          <a class="logoResponsive" href="#top">Dr. <span class="color">Fabián Lerner</span></a>
+          <button class="toggle" onclick="closeNav()">
+            <span class="material-symbols-outlined icon">
+              close
+            </span>
+          </button>
+        </div>
+        <nav class="nav" id="nav">
             <ul class="nav-list">
-                <li><a class="link" href="#mini-bio">Mini Bio</a></li>
-                <li><a class="link" href="#glaucoma">¿Qué es el glaucoma?</a></li>
-                <li><a class="link" href="#">Prensa</a></li>
+                <li class="item"><a onclick="closeNav()" class="link" href="#glaucoma">¿Qué es el glaucoma?</a></li>
+                <li class="item"><a onclick="closeNav()" class="link" href="#mini-bio">Mini Bio</a></li>
+                <li class="item"><a onclick="closeNav()" class="link" href="#prensa">Prensa</a></li>
             </ul>
-            <a href="#contacto" class="button-contacto">Contacto</a>
+            <a onclick="closeNav()" href="#contacto" class="button-contacto" >Contacto</a>
         </nav>
+        <button class="toggle" onclick="toggleNav()">
+          <span class="material-symbols-outlined hamburger">
+            menu
+          </span>
+        </button>
     </header>
     <main class="main">
       <img class="ellipse" src="./media/main.png"></img>
@@ -286,30 +303,30 @@
             <h4>Dr. Fabián Lerner</h4>
             <p>Medico oftalmólogo</p>
           </div>
-          <div>
-            <i></i>
-            <i></i>
-            <i></i>
+          <div class="social">
+            <a href=""><i class='bx bxl-facebook-square icon'></i></a>
+            <a href=""><i class='bx bxl-instagram-alt icon'></i></a>
+            <a href=""<i class='bx bxl-linkedin-square icon'></i></a>
           </div>
         </div>
         <div class="line"></div>
         <div class="box2 footer-box" id="contacto">
           <h4 class="footer-title">Contacto</h4>
           <div class="medios">
-            <div>
-              <i></i>
+            <div class="medio">
+              <i class='bx bxs-envelope icon'></i>
               <p>email@gmail.com</p>
             </div>
-            <div>
-              <i></i>
+            <div class="medio">
+              <i class='bx bxs-phone icon'></i>
               <p>(+54-11)0000-0000</p>
             </div>
-            <div>
-              <i></i>
+            <div class="medio">
+              <i class='bx bxs-map icon' ></i>
               <p>direccion 123</p>
             </div>
-            <div>
-              <i></i>
+            <div class="medio">
+              <i class='bx bx-calendar icon'></i>
               <p>Lunes a viernes de 10 a 22Hs</p>
             </div>
           </div>

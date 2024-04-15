@@ -20,11 +20,31 @@ const swiper = new Swiper(".swiper", {
   },
 
   breakpoints: {
-    600: {
+    320: {
       slidesPerView: 1,
     },
-    1200: {
+    750: {
+      slidesPerView: 2,
+    },
+    900: {
       slidesPerView: 3,
+    },
+    1500: {
+      slidesPerView: 4,
     },
   },
 });
+
+function toggleNav() {
+  let nav = document.getElementById("header");
+  if (nav.className === "header") {
+    nav.className = "responsiveHeader";
+  } else {
+    nav.className = "header";
+  }
+}
+
+function closeNav() {
+  let nav = document.getElementById("header");
+  nav.className = "header";
+}
