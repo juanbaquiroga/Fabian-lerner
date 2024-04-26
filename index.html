@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/styles.css" />
@@ -35,9 +34,7 @@
         <div class="topContainer">
           <a class="logoResponsive" href="#top">Dr. <span class="color">Fabián Lerner</span></a>
           <button class="toggle" onclick="closeNav()">
-            <span class="material-symbols-outlined icon">
-              close
-            </span>
+            <i class='bx bx-x icon' style='color:#ffffff' ></i>
           </button>
         </div>
         <nav class="nav" id="nav">
@@ -49,13 +46,11 @@
             <a onclick="closeNav()" href="#contacto" class="button-contacto" >Contacto</a>
         </nav>
         <button class="toggle" onclick="toggleNav()">
-          <span class="material-symbols-outlined hamburger">
-            menu
-          </span>
+          <i class='bx bx-menu icon' style='color:#ffffff' ></i>
         </button>
     </header>
     <main class="main">
-      <img class="ellipse" src="./media/main.png"></img>
+      <img class="ellipse" src="./media/main/main.png"></img>
       <div class="main-container">
         <div class="main-text-container">
           <h1 class="main-title">Dr. <span class="title-span">Fabián Lerner</span></h1>
@@ -67,160 +62,13 @@
         </div>
         <div class="main-img-container">
           <img
-            src="./media/FLerner_14-removebg-preview.png"
+            src="./media/main/fabian.png"
             alt="Dr. Fabián Lerner"
             class="main-img"
           />
         </div>
       </div>
     </main>
-    <section class="gallery">
-      <div class="slider">
-        <div class="slider-track">
-          <div class="slide slide-large">
-            <img src="./media/gallery/1.png" alt="" class="image">
-            <p class="text">Asociación Mundial de Glaucoma</p>
-          </div>
-          <div class="slide slide-small">
-            <img src="./media/gallery/2.png" alt="" class="image">
-            <p class="text">Operando en Armenia</p>
-          </div>
-          <div class="slide slide-small">
-            <img src="./media/gallery/3.png" alt="" class="image">
-            <p class="text">Por recibir el premio de la Academia Nacional de Medicina</p>
-          </div>
-          <div class="slide slide-large">
-            <img src="./media/gallery/4.png" alt="" class="image">
-            <p class="text">Sociedad Española de Glaucoma - conferencia magistral</p>
-          </div>
-          <div class="slide slide-large">
-            <img src="./media/gallery/5.png" alt="" class="image">
-            <p class="text">Congreso Mundial de Glaucoma 2019</p>
-          </div>
-          <div class="slide slide-large">
-            <img src="./media/gallery/6.png" alt="" class="image">
-            <p class="text">Congreso Mundial de Glaucoma - Paris 2011</p>
-          </div>
-          <div class="slide slide-small">
-            <img src="./media/gallery/7.png" alt="" class="image">
-            <p class="text">Santiago de chile 2023</p>
-          </div>
-          <div class="slide slide-small">
-            <img src="./media/gallery/8.png" alt="" class="image">
-            <p class="text">Junto al Dr. Roger Hitchings</p>
-          </div>
-          <div class="slide slide-large">
-            <img src="./media/gallery/1.png" alt="" class="image">
-            <p class="text">Asociación Mundial de Glaucoma</p>
-          </div>
-          <div class="slide slide-small">
-            <img src="./media/gallery/2.png" alt="" class="image">
-            <p class="text">Operando en Armenia</p>
-          </div>
-          <div class="slide slide-small">
-            <img src="./media/gallery/3.png" alt="" class="image">
-            <p class="text">Por recibir el premio de la Academia Nacional de Medicina</p>
-          </div>
-          <div class="slide slide-large">
-            <img src="./media/gallery/4.png" alt="" class="image">
-            <p class="text">Sociedad Española de Glaucoma - conferencia magistral</p>
-          </div>
-          <div class="slide slide-large">
-            <img src="./media/gallery/5.png" alt="" class="image">
-            <p class="text">Congreso Mundial de Glaucoma 2019</p>
-          </div>
-          <div class="slide slide-large">
-            <img src="./media/gallery/6.png" alt="" class="image">
-            <p class="text">Congreso Mundial de Glaucoma - Paris 2011</p>
-          </div>
-          <div class="slide slide-small">
-            <img src="./media/gallery/7.png" alt="" class="image">
-            <p class="text">Santiago de chile 2023</p>
-          </div>
-          <div class="slide slide-small">
-            <img src="./media/gallery/8.png" alt="" class="image">
-            <p class="text">Junto al Dr. Roger Hitchings</p>
-          </div>
-        </div>
-        <div class="slider-track">
-          <div class="slide slide-small">
-            <img src="./media/gallery/9.png" alt="" class="image">
-            <p class="text">XVI Congreso Sociedad Española de Glaucoma</p>
-          </div>
-          <div class="slide slide-large">
-            <img src="./media/gallery/10.png" alt="" class="image">
-            <p class="text">XVI Congreso Sociedad Española de Glaucoma</p>
-          </div>
-          <div class="slide slide-large">
-            <img src="./media/gallery/12.png" alt="" class="image">
-            <p class="text">En Quirofano</p>
-          </div>
-          <div class="slide slide-small">
-            <img src="./media/gallery/11.png" alt="" class="image">
-            <p class="text">Universidad de Yale, EEUU</p>
-          </div>
-          <div class="slide slide-small">
-            <img src="./media/gallery/14.png" alt="" class="image">
-            <p class="text">Congreso Mundial de Glaucoma - Vancouver 2013</p>
-          </div>
-          <div class="slide slide-large">
-            <img src="./media/gallery/13.png" alt="" class="image">
-            <p class="text">12<sup class="superindice">th</sup> EGS Congress - Praga</p>
-          </div>
-          <div class="slide slide-small">
-            <img src="./media/gallery/15.png" alt="" class="image">
-            <p class="text">Sociedad Brasilera de Glaucoma 2017</p>
-          </div>
-          <div class="slide slide-large">
-            <img src="./media/gallery/16.png" alt="" class="image">
-            <p class="text">Congreso Mundial de Glaucoma - Roma 2023</p>
-          </div>
-          <div class="slide slide-small">
-            <img src="./media/gallery/9.png" alt="" class="image">
-            <p class="text">XVI Congreso Sociedad Española de Glaucoma</p>
-          </div>
-          <div class="slide slide-large">
-            <img src="./media/gallery/10.png" alt="" class="image">
-            <p class="text">XVI Congreso Sociedad Española de Glaucoma</p>
-          </div>
-          <div class="slide slide-large">
-            <img src="./media/gallery/12.png" alt="" class="image">
-            <p class="text">En Quirofano</p>
-          </div>
-          <div class="slide slide-small">
-            <img src="./media/gallery/11.png" alt="" class="image">
-            <p class="text">Universidad de Yale, EEUU</p>
-          </div>
-          <div class="slide slide-small">
-            <img src="./media/gallery/14.png" alt="" class="image">
-            <p class="text">Congreso Mundial de Glaucoma - Vancouver 2013</p>
-          </div>
-          <div class="slide slide-large">
-            <img src="./media/gallery/13.png" alt="" class="image">
-            <p class="text">12<sup class="superindice">th</sup> EGS Congress - Praga</p>
-          </div>
-          <div class="slide slide-small">
-            <img src="./media/gallery/15.png" alt="" class="image">
-            <p class="text">Sociedad Brasilera de Glaucoma 2017</p>
-          </div>
-          <div class="slide slide-large">
-            <img src="./media/gallery/16.png" alt="" class="image">
-            <p class="text">Congreso Mundial de Glaucoma - Roma 2023</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="glaucoma" id="glaucoma">
-      <div class="glaucoma-container">
-        <div class="text-container">
-          <h3 class="subtitle">¿Qué es el glaucoma?</h3>
-          <p class="text">Es un grupo de enfermedades en el que se produce un daño característico en el nervio óptico (el nervio de la visión). En la mayoría de los casos ocurre asociado a una presión elevada dentro del ojo. El daño es permanente e irreversible. Inicialmente no da síntomas y, si no se trata, puede llevar a la ceguera. <b>El glaucoma es la segunda causa más frecuente de ceguera en el mundo, y la primera irreversible.</b></p>
-        </div>
-        <div class="video-container">
-          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/20W2OD1OpNU?si=9QElNWoTFXYBWeYK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-      </div>
-    </section>
     <section class="mini-bio" id="mini-bio">
       <div class="container">
         <h2 class="subtitle">Mini Bio</h2>
@@ -240,6 +88,395 @@
         </div>
       </div>
     </section>
+    <section class="gallery">
+      <div class="slider">
+        <div class="slider-track slider-track-1">
+          <div class="slide slide-large">
+            <img src="./media/gallery/1.png" alt="" class="image">
+            <p class="text">Asociación Mundial de Glaucoma</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/2.png" alt="" class="image">
+            <p class="text">Operando en Armenia</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/3.png" alt="" class="image">
+            <p class="text">Por recibir el premio de la Academia Nacional de Medicina</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/4.png" alt="" class="image">
+            <p class="text">Sociedad Española de Glaucoma - conferencia magistral</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/5.png" alt="" class="image">
+            <p class="text">Congreso Mundial de Glaucoma 2019</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/6.png" alt="" class="image">
+            <p class="text">Congreso Mundial de Glaucoma - Paris 2011</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/7.png" alt="" class="image">
+            <p class="text">Santiago de chile 2023</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/8.png" alt="" class="image">
+            <p class="text">Junto al Dr. Roger Hitchings</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/17.png" alt="" class="image">
+            <p class="text">Unicamp, Brasil 2016</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/18.png" alt="" class="image">
+            <p class="text">Helsinki 2017</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/19.png" alt="" class="image">
+            <p class="text">Hong Kong 2015</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/1.png" alt="" class="image">
+            <p class="text">Asociación Mundial de Glaucoma</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/2.png" alt="" class="image">
+            <p class="text">Operando en Armenia</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/3.png" alt="" class="image">
+            <p class="text">Por recibir el premio de la Academia Nacional de Medicina</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/4.png" alt="" class="image">
+            <p class="text">Sociedad Española de Glaucoma - conferencia magistral</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/5.png" alt="" class="image">
+            <p class="text">Congreso Mundial de Glaucoma 2019</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/6.png" alt="" class="image">
+            <p class="text">Congreso Mundial de Glaucoma - Paris 2011</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/7.png" alt="" class="image">
+            <p class="text">Santiago de chile 2023</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/8.png" alt="" class="image">
+            <p class="text">Junto al Dr. Roger Hitchings</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/17.png" alt="" class="image">
+            <p class="text">Unicamp, Brasil 2016</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/18.png" alt="" class="image">
+            <p class="text">Helsinki 2017</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/19.png" alt="" class="image">
+            <p class="text">Hong Kong 2015</p>
+          </div>
+        </div>
+        <div class="slider-track slider-track-2">
+          <div class="slide slide-small">
+            <img src="./media/gallery/9.png" alt="" class="image">
+            <p class="text">XVI Congreso Sociedad Española de Glaucoma</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/10.png" alt="" class="image">
+            <p class="text">XVI Congreso Sociedad Española de Glaucoma</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/12.png" alt="" class="image">
+            <p class="text">En Quirofano</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/11.png" alt="" class="image">
+            <p class="text">Universidad de Yale, EEUU</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/14.png" alt="" class="image">
+            <p class="text">Congreso Mundial de Glaucoma - Vancouver 2013</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/13.png" alt="" class="image">
+            <p class="text">12<sup class="superindice">th</sup> EGS Congress - Praga</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/15.png" alt="" class="image">
+            <p class="text">Sociedad Brasilera de Glaucoma 2017</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/16.png" alt="" class="image">
+            <p class="text">Congreso Mundial de Glaucoma - Roma 2023</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/20.png" alt="" class="image">
+            <p class="text">Congreso Mundial de Oftalmología, Guadalajara 2016</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/21.png" alt="" class="image">
+            <p class="text">Melbourne, Australia</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/9.png" alt="" class="image">
+            <p class="text">XVI Congreso Sociedad Española de Glaucoma</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/10.png" alt="" class="image">
+            <p class="text">XVI Congreso Sociedad Española de Glaucoma</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/12.png" alt="" class="image">
+            <p class="text">En Quirofano</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/11.png" alt="" class="image">
+            <p class="text">Universidad de Yale, EEUU</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/14.png" alt="" class="image">
+            <p class="text">Congreso Mundial de Glaucoma - Vancouver 2013</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/13.png" alt="" class="image">
+            <p class="text">12<sup class="superindice">th</sup> EGS Congress - Praga</p>
+          </div>
+          <div class="slide slide-small">
+            <img src="./media/gallery/15.png" alt="" class="image">
+            <p class="text">Sociedad Brasilera de Glaucoma 2017</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/16.png" alt="" class="image">
+            <p class="text">Congreso Mundial de Glaucoma - Roma 2023</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/20.png" alt="" class="image">
+            <p class="text">Congreso Mundial de Oftalmología, Guadalajara 2016</p>
+          </div>
+          <div class="slide slide-large">
+            <img src="./media/gallery/21.png" alt="" class="image">
+            <p class="text">Melbourne, Australia</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="glaucoma" id="glaucoma">
+      <span id="overlay" class="overlay"></span>
+      <div class="glaucoma-container">
+        <div class="text-container">
+          <h3 class="subtitle">¿Qué es el glaucoma?</h3>
+          <p class="text">Es un grupo de enfermedades en el que se produce un daño característico en el nervio óptico (el nervio de la visión). En la mayoría de los casos ocurre asociado a una presión elevada dentro del ojo. El daño es permanente e irreversible. Inicialmente no da síntomas y, si no se trata, puede llevar a la ceguera. <b>El glaucoma es la segunda causa más frecuente de ceguera en el mundo, y la primera irreversible.</b></p>
+          <button class="button-show-glaucoma-modal">Ver mas</button>
+        </div>
+        <div class="video-container">
+          <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/20W2OD1OpNU?si=9QElNWoTFXYBWeYK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+     
+      <div class="glaucoma-modal">
+        <button class="button-close-glaucoma-modal" onclick="closeNav()">
+          <i class='bx bx-x icon' style='color:#ffffff' ></i>
+        </button>
+        <div class="text-container">
+          <h3 class="title">¿Qué es el Glaucoma?</h3>
+          <h4 class="subtitle">a - introduccion</h4>
+          <p class="text">Para comprender qué es el glaucoma, conviene entender aunque sea someramente, cómo funciona el ojo. El ojo fabrica un líquido en forma constante llamado humor acuoso, que tiene varias funciones importantes. El humor acuoso circula dentro del ojo desde la cámara posterior a la cámara anterior, y sale del ojo a través de una serie de canales altamente especializados que forman una malla, y que se llama malla trabecular o trabeculado. Esta malla trabecular se ubica en una zona del ojo llamada ángulo camerular o, simplemente ángulo. De acuerdo a las características del ángulo se puede clasificar a los glaucomas en función de si el ángulo es abierto o cerrado, entre otras posibilidades.</p>
+          <p class="text">Habitualmente existe un balance entre la producción y la salida del humor acuoso de forma tal de mantener la forma y la función del ojo. Cuando el humor acuoso no puede salir del ojo, la presión intraocular (PIO) aumenta, lo que puede llevar al desarrollo del glaucoma. Si la presión está elevada en forma importante o por un período prolongado, daña el nervio óptico. El nervio óptico es un conjunto de fibras que llevan la información de lo que vemos al cerebro. Cuando se daña el nervio óptico, se comienza a perder el campo visual. En esta etapa inicial el paciente puede no notar nada, y recién nota una disminución de su campo visual cuando ha perdido un gran porcentaje del mismo. En algunos casos puede notar que no ve tan claro como antes, que ha perdido contraste o que no ve con claridad los colores. Los estudios disponibles en la actualidad son capaces de detectar el déficit visual con gran anticipación, mucho tiempo antes de que este déficit signifique un problema para la vida cotidiana del paciente. En ocasiones, el glaucoma puede ocurrir con PIO normal, lo que se denomina glaucoma de presión normal. </p>
+          <div class="image-container">
+            <div class="card">
+              <img src="./media/glaucoma/Figura-1.JPG" alt="Nervio óptico sano" class="image">
+              <p class="description">Nervio óptico sano</p>
+            </div>
+            <div class="card">
+              <img src="./media/glaucoma/Figura-2.JPG" alt="Nervio óptico con glaucoma" class="image">
+              <p class="description">Nervio óptico con glaucoma</p>
+            </div>
+            <div class="card-pdf">
+              <embed src="./media/glaucoma/Figura-3.pdf" alt="Campo Visual Normal" title="campo visual normal" class="pdf">
+              <p class="description">Campo Visual Normal</p>
+            </div>
+            <div class="card-pdf">
+              <embed src="./media/glaucoma/Figura-4.pdf" alt="Campo Visual afectado por glaucoma" title="Campo Visual afectado por glaucoma" class="pdf">
+              <p class="description">Campo Visual afectado por glaucoma</p>
+            </div>
+          </div>
+          <h4 class="subtitle">b - Tipos de glaucoma</h4>
+          <p class="text">Existen distintos tipos de glaucoma. El más común se denomina glaucoma primario de ángulo abierto, también llamado glaucoma crónico simple. Otros tipos de glaucoma son el glaucoma de ángulo cerrado, el glaucoma de presión normal, el glaucoma pigmentario, glaucoma exfoliativo o pseudoexfoliativo, juvenil, congénito, etc.</p>
+          <p class="text"><b>Breve descripción de algunos tipos de glaucoma:</b></p>
+          <ul class="list">
+            <li class="item"><em>Glaucoma Primario de Ángulo Abierto:</em> Es el tipo más frecuente de glaucoma en la población occidental. No tiene síntomas, es decir, no duele, no pica, no molesta. El nervio óptico se daña gradualmente lo que es acompañado por una pérdida en el campo visual, que comienza generalmente por la visión periférica. Si el glaucoma no es controlado, la enfermedad puede llevar a la ceguera.</li>
+            <li class="item"><em>Glaucoma de ángulo cerrado:</em> puede ser de curso crónico o de aparición aguda. El de curso crónico también puede tener un episodio agudo, y el agudo puede cronificarse.
+              <ul class="list">
+                <li class="sub-item">Glaucoma crónico de ángulo cerrado: puede tener un curso similar al de ángulo abierto, es decir, no tener sintomatología. Ocasionalmente puede tener un episodio subagudo, esto es, algún síntoma sin llegar a un ataque agudo.</li>
+                <li class="sub-item">Glaucoma agudo de ángulo cerrado: es un cuadro de emergencia que requiere tratamiento inmediato. Ocurre cuando el flujo de humor acuoso se interrumpe bruscamente, lo que genera una elevación brusca de la <b>PIO</b>. Los síntomas no son solamente oftalmológicos e incluyen dolor, visión borrosa, visión de halos coloreados alrededor de la luz, ojo rojo, náuseas y vómitos.</li>
+              </ul>
+            </li>
+            <li class="item"><em>Glaucoma de tensión normal:</em> es un glaucoma de ángulo abierto en el que existe daño en el nervio óptico y en el campo visual, similar al glaucoma primario de ángulo abierto, pero con valores de presión intraocular en los rangos normales. Es un cuadro menos frecuente en la Argentina, aunque es más común en Japón.</li>
+            <li class="item"><em>Glaucoma congénito:</em> ocurre en bebés en quienes hay un desarrollo anormal de la malla trabecular o el ángulo del ojo. El glaucoma congénito puede estar descompensado, en donde la córnea se daña debido a la PIO elevada y en lugar de ser transparente es blanco-azulada. También puede ser compensado en donde la córnea se mantiene transparente aunque también es grave. El glaucoma congénito es quirúrgico. Característicamente el bebé puede tener “ojos grandes”, fotofobia (no tolera la luz), blefaroespasmo (cierra los párpados) y lagrimeo.</li>
+            <li class="item"><em>Glaucoma juvenil:</em> generalmente se usa éste término para describir la presencia de glaucoma en niños, adolescentes y adultos jóvenes. También se habla de glaucoma pediátrico para referirse a la enfermedad en niños.</li>
+            <li class="item"><em>Glaucoma Pigmentario:</em> es un tipo de glaucoma de ángulo abierto en el que el iris libera gránulos de pigmento que circulan por la cámara anterior y se depositan en la malla trabecular. Es más común en adultos jóvenes de sexo masculino, particularmente miopes.</li>
+            <li class="item"><em>Glaucoma asociado a pseudoexfoliación capsular (también llamada exfoliación capsular):</em> En esta condición, el ojo produce un material blanquecino que se deposita en la malla trabecular. Es más frecuente por encima de los 60 años en personas con ancestros europeos, particularmente alrededor del Mediterráneo.</li>
+            <li class="item"><em>Glaucoma secundario:</em> existen distintos tipos de glaucomas secundarios, y son debidos a diferentes problemas tales como una inflamación intraocular, un traumatismo, un tumor, una cirugía previa, etc.</li>
+            <li class="item"><em>Glaucoma neovascular:</em> en esta condición hay vasos sanguíneos anormales que crecen en el interior del ojo y obstruyen el ángulo y la malla trabecular. Las causas más comunes de producción del glaucoma neovascular son la diabetes no controlada y la oclusión de las venas de la retina.</li>
+          </ul>
+          <h3 class="title">Factores de riesgo</h3>
+          <p class="text">Si bien el glaucoma puede ocurrir en cualquiera a cualquier edad, existen factores de riesgo para padecer esta enfermedad. Estos son los factores de riesgo principales para padecer glaucoma primario de ángulo abierto y de ángulo cerrado:</p>
+          <ol class="list" type="a">
+            <li class="item ">Factores de riesgo para padecer glaucoma primario de ángulo abierto:</li>
+              <ul class="list">
+                <li class="sub-item">Presión intraocular elevada.</li>
+                <li class="sub-item">Familiares con glaucoma.</li>
+                <li class="sub-item">Mayores de 60 años.</li>
+                <li class="sub-item">Mayores de 40 años en la raza negra.</li>
+                <li class="sub-item">Miopía (dificultad para ver de lejos sin anteojos).</li>
+                <li class="sub-item">Uso de corticoides en forma prolongada.</li>
+                <li class="sub-item">Diabetes. Algunos estudios no lo consideran un factor de riesgo.</li>
+                <li class="sub-item">Trauma ocular o cirugía ocular previa.</li>
+                <li class="sub-item">Hipotensión arterial.</li>
+                <li class="sub-item">Alteraciones en algunas características de la córnea.</li>
+              </ul>
+            <li class="item">Factores de riesgo para padecer glaucoma primario de ángulo cerrado:</li>
+              <ul class="list">
+                <li class="sub-item">Presión intraocular elevada.</li>
+                <li class="sub-item">Mayores de 65 años.</li>
+                <li class="sub-item">Familiares con glaucoma.</li>
+                <li class="sub-item">Hipermetropía.</li>
+                <li class="sub-item">Traumatismo o cirugía ocular previa.</li>
+                <li class="sub-item">Individuos de origen asiático tienen mayor riesgo.</li>
+              </ul>
+          </ol>
+          <h3 class="title">Exámen oftalmológico en glaucoma</h3>
+          <p class="text">Cómo hace el oftalmólogo para determinar si tengo glaucoma?</p>
+          <p class="text">El oftalmólogo va a realizar un examen oftalmológico que incluye varios pasos:</p>
+          <ol class="list" type="a">
+            <li class="item"><span class="sub">Examen de la agudeza visual:</span> mediante este examen sabe cómo está su visión central.</li>
+            <li class="item"><span class="sub">Biomicroscopía:</span> mediante la lámpara de hendidura, el médico oftalmólogo estudia las diferentes partes del ojo.</li>
+            <li class="item"><span class="sub">Tonometría o medición de la presión intraocular:</span> el oftalmólogo coloca unas gotas en el ojo, y seguidamente apoya muy suavemente un instrumento denominado tonómetro en la superficie del ojo. Existen diferentes tipos de tonómetros.</li>
+            <li class="item"><span class="sub">Oftalmoscopía:</span> Este exámen permite evaluar el estado del nervio óptico y el resto de la retina. Existen distintas formas de realizarlo. En ocasiones es necesario colocar unas gotas para dilatar la pupila y poder observar así mejor el fondo del ojo.</li>
+            <li class="item"><span class="sub">Gonioscopía:</span> luego de colocarle unas gotas de anestesia, el oftalmólogo va a apoyar una lente de contacto especial sobre la superficie del ojo que le va a permitir observar el ángulo camerular. De esta forma podrá ver si su ángulo es abierto o cerrado, así como otros detalles clínicos.</li>
+            <li class="item"><span class="sub">Exámen de campo visual:</span> el paciente, manteniendo la vista fija hacia delante, avisa apretando un botón cuando ve aparecer una luz dentro de su campo de visión. Hoy en día se utilizan equipos computados para este exámen. Estos equipos tienen diferentes programas destinados a detectar, entre otras cosas, el glaucoma.</li>
+            <li class="item"><span class="sub">Otros estudios:</span>otros estudios que el oftalmólogo puede solicitar son:
+              <ul class="list">
+                <li class="sub-item">Paquimetría: mediante este estudio es posible conocer el espesor central de la cornea. Para realizarlo, se colocan unas gotas de anestesia y se apoya una sonda en el área central de la cornea. Si la cornea es más gruesa que lo normal, la medición de la presión podría dar más elevado que lo que realmente es. Por el contrario, una cornea más delgada que lo normal podría dar un valor de presión intraocular menor que lo que es. Conocer el espesor central de la cornea es importante para determinar el valor de la presión intraocular.</li>
+                <li class="sub-item">Métodos computados de exámen del nervio óptico y la retina: existen diversos métodos para analizar en forma computada y cuantitativamente el nervio óptico y la retina, como el HRT (Tomografía Retinal de Heidelberg) o el OCT (Tomografía Óptica de Coherencia). El uso del OCT en el diagnóstico y el seguimiento del glaucoma se ha popularizado en los últimos años.</li>
+                <li class="sub-item">Medición de la histéresis corneal. Es un método simple y no traumático.</li>
+              </ul>
+            </li>
+          </ol>
+          <h3 class="title">Estadísticas del glaucoma</h3>
+          <ul class="list">
+            <li class="item">El glaucoma es una de las dos primeras causas más frecuentes de ceguera en el mundo.</li>
+            <li class="item">Es la primera irreversible.</li>
+            <li class="item">Se calcula que hay alrededor de 80 millones de personas con glaucoma en el mundo.</li>
+            <li class="item">Diez por ciento de ellas son ciegas.</li>
+            <li class="item">Varios millones más tienen presión intraocular elevada aunque no han desarrollado daño aún.</li>
+            <li class="item">La mitad de las personas con glaucoma no sabe que lo padece.</li>
+            <li class="item">El glaucoma no da síntomas en la mayoría de los casos. Asimismo en la enorme mayoría de los casos la ceguera puede prevenirse con un control y tratamiento adecuados.</li>
+            <li class="item">En los Estados Unidos la ceguera es el tercer problema de salud más temido luego del cancer y los ataques cardíacos.</li>
+            <li class="item">Existe una falta de conocimiento real en la población acerca de esta enfermedad. Si hubiera una concientización mayor, se podría prevenir la ceguera en muchas personas.</li>
+          </ul>
+          <h3 class="title">Vivir con glaucoma</h3>
+          <dl class="descriptive-list" >
+            <dt class="d-title"><span class="sub">Influyen la comida y la bebida en mi glaucoma?</span></dt>
+            <dd class="d-item">Existen algunos estudios que muestran que si se toma una cantidad importante de líquido en poco tiempo (por ejemplo 800 ml en menos de 5 minutos), puede elevarse la presión intraocular. Igualmente, en la vida cotidiana, es difícil tomar tanto líquido en tan poco tiempo. Tanto la ingesta normal de líquidos como de comidas no tienen influencia en el glaucoma.</dd>
+            <dt class="d-title"><span class="sub">Influyen el ejercicio y el yoga en mi glaucoma?</span></dt>
+            <dd class="d-item">El ejercicio regular y constante ayuda a disminuír la presión intraocular. El ejercicio brusco y fuerte puede elevar la presión intraocular en pacientes con glaucoma pigmentario. En cuanto al yoga, las posiciones invertidas (cabeza para abajo) pueden elevar la presión intraocular.</dd>
+            <dt class="d-title"><span class="sub">Cómo colocarse las gotas</span></dt>
+            <dd class="d-item">La efectividad de la medicación que su oftalmólogo le prescribió puede verse reducida si usted no coloca correctamente las gotas. Asimismo, una correcta aplicación de las gotas ayuda a reducir los efectos adversos, tanto locales como generales. Las siguientes recomendaciones lo van a ayudar a colocarse las gotas correctamente.
+              <ul class="list">
+                <li class="item">Primer paso: lávese las manos.</li>
+                <li class="item">Segundo paso: luego de destapar el frasco, tómelo con una mano.</li>
+                <li class="item">Tercer paso: con el dedo índice de su otra mano baje el párpado inferior para formar un espacio donde colocar la gota.</li>
+                <li class="item">Cuarto paso: Use el dedo mayor para comprimir el ángulo interno del ojo cerca de la nariz. Esto ayuda a disminuír la absorción de las gotas a través de los conductos lacrimonasales.</li>
+                <li class="item">Quinto paso: posicione el frasco sobre el ojo a la altura del espacio recién formado y apriete el frasco hasta que caiga una gota.</li>
+                <li class="item">Sexto paso: una vez colocada la gota cierre suavemente los ojos (si los cierra fuerte va a expulsar la gota), y continúe comprimiendo el ángulo interno del ojo por unos tres minutos. Utilice un pañuelo de papel o un algodón para secar el exceso de gota y evitar que contacte la delicada piel de los párpados.</li>
+              </ul>
+              Recuerde:
+              <ul class="list">
+                <li class="item">Evite tocar la punta del frasco con la piel o el ojo dado que podría contaminarse el contenido el frasco.</li>
+                <li class="item">Si utiliza más de una medicación, espere al menos diez minutos entre una gota y otra.</li>
+                <li class="item">Si no está seguro si la gota entró o no, coloque otra. Es importante asegurarse que la gota entre en contacto con el ojo. A veces la gota cae sobre la piel y no sobre el ojo y el paciente podría interpretar erróneamente que la gota entró en el ojo.</li>
+              </ul>
+            </dd>
+            <dt class="d-title"><span class="sub">La vida cotidiana</span></dt>
+            <dd class="d-item">Un paciente con glaucoma controlado puede vivir una vida cotidiana sin problemas. Es frecuente que el glaucoma genere molestias con la luz (fotofobia). Su oftalmólogo verificará el orígen de esas molestias y su eventual tratamiento. Trate de ajustar las dosis de los medicamentos a su vida cotidiana. <em>Coméntele al oftalmólogo todas las medicaciones que toma, así como cuéntele a su médico todas las gotas que se coloca en el ojo.</em></dd>
+          </dl>
+          <h3 class="title">Tratamiento del glaucoma</h3>
+          <p class="text">Existen diversas alternativas para el tratamiento del glaucoma. La mayoría de los casos se controlan mediante el uso de medicamentos bajo la forma de gotas que se colocan en el ojo. Algunos pacientes requieren un tratamiento con láser y otros requieren cirugía. Puede suceder también que sea necesario usar una combinación de estos tratamientos, por ejemplo, que un paciente operado o a quien se le realizó láser requiera tratamiento médico. Asimismo un paciente puede requerir más de una medicación <br>A continuación se dará una breve explicación acerca de los tratamientos disponibles.</p>
+          <dl class="descriptive-list">
+            <dt class="d-title"><span class="sub">Uso de Medicamentos: Tratamiento médico</span></dt>
+            <dd class="d-item">Existen distintos tipos de medicamentos para el glaucoma. La mayoría vienen bajo la forma de gotas que se colocan en el ojo. También existen pastillas que se ingieren por vía oral, aunque habitualmente éstas no constituyen un tratamiento que se use por tiempos prolongados. Los medicamentos disminuyen la presión intraocular, ya sea disminuyendo la producción del humor acuoso (el líquido que circula dentro del ojo), y/o aumentando su salida. Existen algunos medicamentos en investigación que actuarían protegiendo al nervio óptico independientemente de la reducción de la presión intraocular. <br>Muchos pacientes son controlados con el uso de medicamentos solamente durante toda la vida. Cuando vea a su oftalmólogo, debe contarle todos los medicamentos que utiliza (ya sea por glaucoma o por otras enfermedades), dado que algunos medicamentos podrían tener efectos cruzados entre sí. Todos los medicamentos pueden tener efectos adversos. Es importante que usted conozca cuáles pueden ser para reconocerlos y comentarlos a su oftalmólogo. <br>La siguiente es una lista simplificada de los medicamentos disponibles actualmente para el tratamiento del glaucoma. En esta lista describimos brevemente el mecanismo de acción de las drogas y algunos de sus posibles efectos adversos. La efectividad de una droga, así como los efectos adversos, puede variar de paciente a paciente. Es decir, un medicamento altamente eficaz y sin efectos adversos en un paciente puede ser poco o nada eficaz y producir varios efectos adversos en otro paciente. Su médico oftalmólogo va a elegir el tratamiento que mejor se ajuste a sus características y discutirá ventajas y desventajas con usted.
+              <dl class="descriptive-list">
+                <dt class="d-title"><em>1- Beta Bloqueantes</em></dt>
+                <dd class="d-item">Este grupo de drogas se utilizan en el tratamiento del glaucoma desde hace más de 20 años y actúan reduciendo la producción de humor acuoso. Algunas de las drogas más conocidas dentro de esta clase terapéutica son: timolol, levobunolol, carteolol y betaxolol. Se administran una o dos veces en el día. <br> Posibles efectos adversos: a nivel local son visión borrosa, sensación de ojo seco y ojo rojo. A nivel general son: broncoespasmo en sujetos predispuestos, bradicardia, disminución de la tensión arterial, cambios en el colesterol en la sangre, cansancio, depresión, e impotencia.</dd>
+                <dt class="d-title"><em>2- Análogos de las Prostaglandinas</em></dt>
+                <dd class="d-item">Estas drogas fueron introducidas en el mercado hace pocos años, y actúan aumentando la salida del humor acuoso a través de la vía uveoescleral (también llamada vía alternativa). La primera de estas drogas en ser utilizada en el tratamiento del glaucoma fue el latanoprost. Luego se agregaron el travoprost, bimatoprost y tafluprost. Se administran una vez a día, generalmente en la noche. En la mayoría de los casos constituyen la primera línea de tratamiento en el glaucoma. <br> Posibles efectos adversos: Los análogos de las prostaglandinas pueden producir con cierta frecuencia ojo rojo. Asimismo se suele observar un crecimiento de las pestañas. Un efecto adverso posible de este grupo de drogas es el oscurecimiento del iris. Cuando ocurre, suele suceder en iris de color claro y mixto, es decir pacientes que tienen iris color miel/marrón, o azul/marrón por ejemplo. Este oscurecimiento es irreversible. Pueden producir una pigmentación de la piel alrededor de los párpados que suele ser reversible. En pacientes con antecedentes de uveítis puede reactivarla. Se ha reportado edema macular en pacientes con antecedentes de cirugía de catarata previa complicada. También pueden generar picazón y visión borrosa.</dd>
+                <dt class="d-title"><em>3- Agonistas alfa-adrenérgicos</em></dt>
+                <dd class="d-item">La droga más utilizada dentro de este grupo es la brimonidina. El mecanismo de acción sería dual: reducen la producción y aumentan la salida del humor acuoso. Aparte de ser utilizadas en el tratamiento crónico del glaucoma, se las usa para disminuír el pico hipertensivo que puede asociarse al uso de láser.<br>  Posibles efectos adversos: alergia, picazón, ojo rojo, sequedad en ojos, boca y nariz, discreta elevación del párpado superior, fatiga y somnolencia.</dd>
+                <dt class="d-title"><em>4- Inhibidores de la anhidrasa carbónica</em></dt>
+                <dd class="d-item">Vienen bajo la forma de comprimidos (acetazolamida) para ser usados por vía oral, y de gotas para los ojos (dorzolamida y brinzolamida). La utilización de los comprimidos se hace habitualmente por períodos cortos, y como complemento del uso de otros tratamientos. Estas drogas actúan reduciendo la producción de humor acuoso. No deben administrarse a pacientes con alergia conocida a las sulfas.<br>  Posibles efectos adversos: La acetazolamida administrada por vía oral, es capaz de producir efectos adversos severos tales como poliuria (necesidad de orinar frecuentemente, dado que es un diurético), cosquilleos en las manos y los pies, cálculos renales, pérdida del apetito y pérdida de peso, depresión, diarrea, dolor de estómago, cansancio. Excepcionalmente puede dar una complicación severa que es la anemia aplástica. <br>El uso de los inhibidores de la anhidrasa carbónica tópicos (dorzolamida y brinzolamida) ha reducido significativamente la probabilidad de tener las complicaciones encontradas con la acetazolamida oral. Sin embargo es posible tener ojo rojo, alergia, sensación de ojo seco, gusto amargo en la boca luego de la instilación. Excepcionalmente puede observarse alguna de las complicaciones descriptas para la acetazolamida.</dd>
+                <dt class="d-title"><em>5- Mióticos</em></dt>
+                <dd class="d-item">La pilocarpina es el miótico más usado internacionalmente (en muchos países, como en la Argentina, es el único en el mercado). Actúa aumentando la salida de humor acuoso. Viene bajo la forma de solución o de gel (esto permite usarlo menos veces en el día). Con el advenimiento de nuevas medicaciones su uso ha disminuído notablemente debido a sus efectos adversos.<br> Posibles efectos adversos: dolor ocular, dolor de cabeza, pupila en miosis (pequeña), visión borrosa (particularmente en gente joven), disminución de la visión en situaciones con poca luz, y en sujetos predispuestos desprendimiento de retina. Los efectos adversos sistémicos no son frecuentes e incluyen aumento de la salivación y de la sudoración así como alteraciones gastrointestinales.</dd>
+                <dt class="d-title"><em>6- Colirios combinados</em></dt>
+                <dd class="d-item">Hoy en día existen productos que combinan en un solo frasco dos drogas distintas. Esto es muy útil a pacientes que requieren dos o más medicamentos para controlar su enfermedad. <br>El uso de colirios combinados ha sido un avance importante en el tratamiento del glaucoma al combinar en una sola gota dos drogas diferentes.</dd>
+              </dl>
+            </dd>
+            <dt class="d-title"><span class="sub">Uso de Láser en Glaucoma</span></dt>
+            <dd class="d-item">Es posible que usted requiera tratamiento con láser para su glaucoma. Existen diversos tipos de láser y distintas indicaciones para ellos. Con el uso del láser existe el riesgo de una elevación transitoria de la presión intraocular. Su oftalmólogo le administrará una medicación para reducir la probabilidad de que ello ocurra. Existen varias técnicas para el uso del láser en glaucoma. A continuación daremos una breve descripción de los usos más frecuentes.
+              <dl class="descriptive-list">
+                <dt class="d-title">1- Iridotomía periférica con láser</dt>
+                <dd class="d-list">Esta indicación se utiliza para tratar el glaucoma de ángulo cerrado y el de ángulo estrecho. En ocasiones puede usarse para tratar el síndrome de dispersión pigmentaria. El láser realiza un pequeño orificio en el espesor del iris. Se puede realizar con distintos tipos de láser. Los más utilizados son el láser de argón y el láser de Nd:YAG.</dd>
+                <dt class="d-title">2- Trabeculoplastia con láser</dt>
+                <dd class="d-item">Este procedimiento consiste en realizar pequeños disparos a nivel del trabeculado en el ángulo del ojo, para aumentar el drenaje del humor acuoso y así reducir la presión intraocular. Este procedimiento requiere tener un ángulo abierto. Actualmente se realiza con un tipo de láser más moderno y el procedimiento se denomina trabeculoplastia selectiva (SLT por sus siglas en inglés).</dd>
+                <dt class="d-title">3- Ciclofotocoagulación con láser</dt>
+                <dd class="d-item">Esta técnica está reservada habitualmente a casos en donde otras técnicas han fracasado o a casos con mal pronóstico para otras técnicas, debido a las posibles complicaciones que puede tener. Este método utiliza el láser para “coagular” el epitelio ciliar que es el lugar donde se produce el humor acuoso. El mecanismo de acción de este procedimiento entonces es disminuír la producción del humor acuoso. Un nuevo láser de “micropulso” ha sido introducido recientemente para administrar ciclofotocoagulación con menor tasa de complicaciones y puede usarse en diferentes tipos de glaucomas.</dd>
+              </dl>
+            </dd>
+            <dl class="descriptive-list">
+              <dt class="d-title"><span class="sub">Cirugía de glaucoma</span></dt>
+              <dd class="d-item">La cirugía de glaucoma está indicada cuando no es posible controlar la enfermedad con medicamentos y/o láser. No siempre es preciso pasar por la etapa de láser para indicar cirugía. Puede suceder que se pase de la etapa de medicamentos a la etapa de cirugía directamente. Más aún, hay casos en los que se indica cirugía directamente. Existen distintas técnicas para la cirugía de glaucoma. Su cirujano elegirá la que es más conveniente para su caso en particular. Todas las intervenciones se realizan bajo microscopio, es decir son microcirugías. A continuación daremos una breve descripción de las principales técnicas quirúrgicas.
+                <dt class="d-title">1- Trabeculectomía</dt>
+                <dd class="d-item">La trabeculectomía es la técnica más utilizada en cirugía de glaucoma. Consiste en hacer un pequeño orificio en la pared del ojo a nivel de la unión entre la esclera y la cornea para permitir la salida del humor acuoso a través de una nueva vía de salida. El humor acuoso es dirigido hacia un reservorio a nivel subconjuntival denominado ampolla o bulla de filtración. Una vez allí, es absorbido por los capilares para pasar a la circulación general. La cirugía se realiza habitualmente a nivel superior por lo que el párpado lo cubre generalmente y no es notado por el paciente.<br>El éxito de la cirugía depende de varios factores, incluyendo la edad del paciente, el tipo de glaucoma, el tiempo de uso del tratamiento con gotas, si ha tenido o no cirugías previas, etc. Su oftalmólogo le dirá cuales son aproximadamente las probabilidades de éxito en su caso en particular.<br>Actualmente para mejorar el éxito de la cirugía, en determinados casos se utilizan sustancias que inhiben el proceso de cicatrización, y de esa forma, mantener abierta la fístula que se ha realizado.<br>Existen distintos tipos de trabeculectomías que se adaptan a cada caso en particular. Actualmente existe también un tipo de cirugía denominada “no penetrante”, en la que la pared del ojo es adelgazada aunque no completamente perforada. Si bien este tipo de cirugías podrían asociarse a menores complicaciones, también tendrían menores probabilidades de éxito.</dd>
+                <dt class="d-title">2- Colocación de implantes de drenaje</dt>
+                <dd class="d-item">Esta cirugía está indicada en determinados casos en los que la trabeculectomía no es conveniente, o cuando se ha realizado una o más cirugías previas que han fracasado. En esta operación se coloca un dispositivo de drenaje que consiste en un tubo, cuyo extremo proximal está dentro de la cámara anterior y su extremo distal está conectado a un reservorio que se sutura a la pared posterior del ojo. Es un tipo de cirugía cuyo uso se ha ido popularizando cada vez más en los últimos años.</dd>
+                <dt class="d-title">3- Cirugía de Glaucoma Mínimamente Invasiva (MIGS)</dt>
+                <dd class="d-item">La cirugía de glaucoma mínimamente invasiva (Minimally Invasive Glaucoma Surgery) agrupa a un conjunto de técnicas quirúrgicas de desarrollo reciente que tienen en común, como indica su nombre, un abordaje intraocular con mínima incisión. En algunos casos implican la colocación de “stents” para hacer un bypass de la zona de drenaje obstruida.<br>Estas técnicas plantean el abordaje desde diferentes lugares del ojo, y no todas están aprobadas en todos los países. En líneas generales son cirugías seguras.</dd>
+                <dt class="d-title">4- Puntos importantes acerca de la cirugía de glaucoma</dt>
+                <dd class="d-item">
+                  <ul class="list">
+                    <li class="item">El objetivo de la cirugía de glaucoma es bajar la presión intraocular.</li>
+                    <li class="item">Bajando la presión es posible mantener la visión en la enorme mayoría de los casos. Existen casos, sin embargo, en donde a pesar de una cirugía exitosa, la visión se sigue deteriorando. Pueden existir otros factores, denominados “presión independiente” que contribuyen a la pérdida de visión en algunos casos.</li>
+                    <li class="item">Luego de la cirugía de glaucoma, puede existir una disminución de la visión que es temporaria y que su duración depende de varios factores; por ejemplo de la técnica quirúrgica utilidada.</li>
+                    <li class="item">En muchos casos es posible bajar la presión a los valores buscados, sin necesidad de agregar gotas para el glaucoma luego de la cirugía. Sin embargo, puede ser necesario agregar medicación luego de la cirugía si no se ha obtenido el resultado buscado. En ocasiones la operación fracasa y es necesario re-operar. Este porcentaje varía de acuerdo a varios factores individuales.</li>
+                    <li class="item">Luego de la cirugía se administran colirios con antibióticos y anti-inflamatorios durante un tiempo.</li>
+                    <li class="item">En el postoperatorio inmediato es importante que no realice esfuerzos, no levante cosas pesadas y no se agache de golpe. También, debido a la visión borrosa, no debe manejar ni operar maquinaria que requiera una excelente visión.</li>
+                    <li class="item">Como en toda cirugía, pueden existir complicaciones, algunas muy leves y otras muy graves. Su oftalmólogo conversará con usted acerca de las mismas.</li>
+                  </ul>
+                </dd>
+              </dd>
+            </dl>
+          </dl>
+          <div class="image-container">
+            <div class="card">
+              <img src="./media/glaucoma/Figura-5.JPG" alt="Ojo operado de trabeculectomía" class="image">
+              <p class="description">Ojo operado de trabeculectomía</p>
+            </div>
+            <div class="card">
+              <img src="./media/glaucoma/Figura-6.JPG" alt="Ojo con 2 implantes de drenaje" class="image">
+              <p class="description">Ojo con 2 implantes de drenaje</p>
+            </div>
+            <div class="card">
+              <img class="image" src="./media/glaucoma/Figura-7.JPG" alt="Ojo operado con cirugía mínimamente invasiva (iStent)">
+              <p class="description">Ojo operado con cirugía mínimamente invasiva (iStent)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="prensa" id="prensa">
       <h2 class="subtitle">Prensa</h2>
       <div class="container">
@@ -249,43 +486,123 @@
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img class="card-img" src="./media/cards/1.png" alt="¿Qué es el glaucoma? entrevista">
+              <img class="card-img" src="./media/cards/1.png" alt="Nota en C5N">
               <div class="card-body">
                 <div class="text-container">
-                  <h5 class="card-title">¿Qué es el glaucoma?</h5>
-                  <p class="card-text">Charla dirigida a la comunidad: zoom del Dr. Fabián Lerner</p>
+                  <h5 class="card-title">Nota en C5N</h5>
+                  <p class="card-text">Charla en la semana del glaucoma</p>
                 </div>
-                <a class="card-button" href="#">Ver mas</a>
+                <a class="card-button" href="https://www.youtube.com/watch?v=iQrIfios94I">Ver mas</a>
               </div>
             </div>
             <div class="swiper-slide">
-              <img class="card-img" src="./media/cards/2.png" alt="El glaucoma. Su tratamiento y prevención. video">
+              <img class="card-img" src="./media/cards/2.png" alt="Nota en telefe">
+              <div class="card-body">
+                <div class="text-container">
+                  <h5 class="card-title">Nota en telefe</h5>
+                  <p class="card-text">Nota en Telefé sobre el glaucoma.</p>
+                </div>
+                <a class="card-button" href="https://www.youtube.com/watch?v=aDF6fMzYx5I">Ver mas</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="card-img" src="./media/cards/3.png" alt="Nota en Radio Uno">
+              <div class="card-body">
+                <div class="text-container">
+                  <h5 class="card-title">Nota en Radio Uno</h5>
+                  <p class="card-text">Nota en radio uno, semana del glaucoma</p>
+                </div>
+                <a class="card-button" href="http://radiocut.fm/audiocut/radio-uno-fabian-lerner-mira-por-tus-ojos/#f=search&l=result">Ver mas</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="card-img" src="./media/cards/4.png" alt="¿Qué es el glaucoma? entrevista">
+              <div class="card-body">
+                <div class="text-container">
+                  <h5 class="card-title">Nota en Radio el Mundo</h5>
+                  <p class="card-text">Nota en Radio el mundo en la semana del glaucoma. <br>"Mira por tus ojos"</p>
+                </div>
+                <a class="card-button" href="http://radiocut.fm/audiocut/radio-el-mundo-fabian-lerner-mira-por-tus-ojos/#f=search&l=result">Ver mas</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="card-img" src="./media/cards/5.png" alt="Charla abierta de glaucoma">
+              <div class="card-body">
+                <div class="text-container">
+                  <h5 class="card-title">Charla abierta del glaucoma</h5>
+                  <p class="card-text">¿ Qué es el glaucoma? Charla dirigida a la comunidad: zoom del Dr. Fabián Lerner en el canal de YouTube de la Sociedad Argentina de Oftalmología</p>
+                </div>
+                <a class="card-button" href="https://www.youtube.com/watch?v=NNSjoQITlzw&t=433s">Ver mas</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="card-img" src="./media/cards/6.png" alt="El glaucoma. Su tratamiento y prevención.">
               <div class="card-body">
                 <div class="text-container">
                   <h5 class="card-title">El glaucoma. Su tratamiento y prevención.</h5>
                   <p class="card-text">Ciclo de charlas SIDUSTIME - Dr. Prof. Fabián Lerner</p>
                 </div>
+                <a class="card-button" href="https://www.youtube.com/watch?v=5pA-GkC-1Zc&t=6s">Ver mas</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="card-img" src="./media/cards/7.png" alt="#StamboulianTalks - Glaucoma">
+              <div class="card-body">
+                <div class="text-container">
+                  <h5 class="card-title">#StamboulianTalks - Glaucoma</h5>
+                  <p class="card-text">El Dr. Fabián Lerner habla sobre el glaucoma que, de no ser diagnósticado y tratado a tiempo, puede producir ceguera en el paciente.</p>
+                </div>
+                <a class="card-button" href="https://www.youtube.com/watch?v=b2D-xcauP6c">Ver mas</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="card-img" src="./media/cards/8.png" alt="Entrevista en C5N">
+              <div class="card-body">
+                <div class="text-container">
+                  <h5 class="card-title">Entrevista en C5N</h5>
+                  <p class="card-text">GLAUCOMA: DIAGNÓSTICO Y TRATAMIENTO</p>
+                </div>
                 <a class="card-button" href="#">Ver mas</a>
               </div>
             </div>
             <div class="swiper-slide">
-              <img class="card-img" src="./media/cards/3.png" alt="Presentación del libro Glaucoma">
+              <img class="card-img" src="./media/cards/9.png" alt="A la Vista PROGRAMA 25">
+              <div class="card-body">
+                <div class="text-container">
+                  <h5 class="card-title">A la Vista PROGRAMA 25</h5>
+                  <p class="card-text">Charla sobre la importancia de realizar un control de presión y fondo de ojo.</p>
+                </div>
+                <a class="card-button" href="https://www.youtube.com/watch?v=a92pFrriLPA">Ver mas</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="card-img" src="./media/cards/10.png" alt="Prevención de Ceguera">
+              <div class="card-body">
+                <div class="text-container">
+                  <h5 class="card-title">Prevención de Ceguera</h5>
+                  <p class="card-text">Nota sobre glaucoma y prevención de la ceguera</p>
+                </div>
+                <a class="card-button" href="https://www.youtube.com/watch?v=Jn-V-bZ9Mxs">Ver mas</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img class="card-img" src="./media/cards/11.png" alt="Presentación del libro Glaucoma">
               <div class="card-body">
                 <div class="text-container">
                   <h5 class="card-title">Presentación del libro Glaucoma</h5>
                   <p class="card-text">Glaucoma es la primera obra en español que ofrece una amplia visión acerca de este tema complejo y apasionante.</p>
                 </div>
-                <a class="card-button" href="#">Ver mas</a>
+                <a class="card-button" href="https://www.youtube.com/watch?v=Gaz8jeYdc40">Ver mas</a>
               </div>
             </div>
             <div class="swiper-slide">
-              <img class="card-img" src="./media/cards/1.png" alt="¿Qué es el glaucoma? entrevista">
+              <img class="card-img" src="./media/cards/12.png" alt="Programa de concientización de glaucoma">
               <div class="card-body">
                 <div class="text-container">
-                  <h5 class="card-title">¿Qué es el glaucoma?</h5>
-                  <p class="card-text">Charla dirigida a la comunidad: zoom del Dr. Fabián Lerner</p>
+                  <h5 class="card-title">Programa de concientización de glaucoma</h5>
+                  <p class="card-text">Un magnifico grupo de oftalmólogos debaten y comparten sus perspectivas sobre esta temática tan importante.</p>
                 </div>
-                <a class="card-button" href="#">Ver mas</a>
+                <a class="card-button" href="https://www.youtube.com/watch?v=uqsTQ27J0Tc">Ver mas</a>
               </div>
             </div>
           </div>

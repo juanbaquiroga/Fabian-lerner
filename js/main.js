@@ -7,6 +7,7 @@ const swiper = new Swiper(".swiper", {
   autoplay: true,
   disableOnInteraction: true,
   delay: 5000,
+  initialSlide:4,
 
   pagination: {
     el: ".swiper-pagination",
@@ -48,3 +49,19 @@ function closeNav() {
   let nav = document.getElementById("header");
   nav.className = "header";
 }
+
+
+const section = document.querySelector(".glaucoma"),
+overlay = document.querySelector("#overlay"),
+showBtn = document.querySelector(".button-show-glaucoma-modal"),
+closeBtn = document.querySelector(".button-close-glaucoma-modal");
+
+showBtn.addEventListener("click", () => section.classList.add("glaucoma-active"));
+
+overlay.addEventListener("click", () =>
+section.classList.remove("glaucoma-active")
+);
+
+closeBtn.addEventListener("click", () =>
+section.classList.remove("glaucoma-active")
+);

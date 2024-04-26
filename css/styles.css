@@ -206,18 +206,17 @@ html {
       list-style: none;
       text-align: center;
 
-      .item{
+      .item {
         .link {
           color: var(--color8);
           font-size: 1.5em;
-  
+
           &:hover {
             color: red;
             opacity: 0.1;
           }
         }
       }
-      
     }
     .button-contacto {
       width: 100%;
@@ -351,6 +350,7 @@ html {
   align-items: center;
   width: 100%;
   height: 800px;
+  margin-top: 100px;
 
   .slider {
     width: 100%;
@@ -363,9 +363,6 @@ html {
 
     .slider-track {
       display: flex;
-      animation: scroll 40s linear infinite;
-      -webkit-animation: scroll 40s linear infinite;
-      width: calc((200px * 8) + ((400px * 8) + (10px * 16)));
       gap: 10px;
       .slide {
         height: 270px;
@@ -404,6 +401,16 @@ html {
         width: 200px;
       }
     }
+    .slider-track-1 {
+      animation: scroll-1 44s linear infinite;
+      -webkit-animation: scroll-1 44s linear infinite;
+      width: calc((200px * 8) + ((400px * 14) + (10px * 22)));
+    }
+    .slider-track-2 {
+      animation: scroll-2 40s linear infinite;
+      -webkit-animation: scroll-2 40s linear infinite;
+      width: calc((200px * 8) + ((400px * 12) + (10px * 20)));
+    }
   }
 
   @media (max-width: 730px) {
@@ -413,9 +420,6 @@ html {
       gap: 10px;
 
       .slider-track {
-        animation: scroll-mobile 30s linear infinite;
-        -webkit-animation: scroll-mobile 30s linear infinite;
-        width: calc((100px * 8) + ((200px * 8) + (5px * 16)));
         gap: 5px;
         .slide {
           height: 135px;
@@ -434,32 +438,66 @@ html {
           width: 100px;
         }
       }
+      .slider-track-1 {
+        animation: scroll-mobile-1 33s linear infinite;
+        -webkit-animation: scroll-mobile-1 33s linear infinite;
+        width: calc((100px * 8) + ((200px * 14) + (5px * 22)));
+      }
+      .slider-track-2 {
+        animation: scroll-mobile-2 30s linear infinite;
+        -webkit-animation: scroll-mobile-2 30s linear infinite;
+        width: calc((100px * 8) + ((200px * 12) + (5px * 20)));
+      }
     }
   }
 }
 
-@keyframes scroll {
+@keyframes scroll-1 {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
     -webkit-transform: translateX(
-      calc((-200px * 4) + ((-400px * 4) + (-10px * 8)))
+      calc((-200px * 4) + ((-400px * 7) + (-10px * 11)))
     );
-    transform: translateX(calc((-200px * 4) + ((-400px * 4) + (-10px * 8))));
+    transform: translateX(calc((-200px * 4) + ((-400px * 7) + (-10px * 11))));
   }
 }
-@keyframes scroll-mobile {
+@keyframes scroll-2 {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
     -webkit-transform: translateX(
-      calc((-100px * 4) + ((-200px * 4) + (-5px * 8)))
+      calc((-200px * 4) + ((-400px * 6) + (-10px * 10)))
     );
-    transform: translateX(calc((-100px * 4) + ((-200px * 4) + (-5px * 8))));
+    transform: translateX(calc((-200px * 4) + ((-400px * 6) + (-10px * 10))));
+  }
+}
+@keyframes scroll-mobile-1 {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(
+      calc((-100px * 4) + ((-200px * 7) + (-5px * 11)))
+    );
+    transform: translateX(calc((-100px * 4) + ((-200px * 7) + (-5px * 11))));
+  }
+}
+@keyframes scroll-mobile-2 {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(
+      calc((-100px * 4) + ((-200px * 6) + (-5px * 10)))
+    );
+    transform: translateX(calc((-100px * 4) + ((-200px * 6) + (-5px * 10))));
   }
 }
 
@@ -473,7 +511,8 @@ html {
   align-items: center;
   padding: var(--padding);
   width: 100%;
-  height: 900px;
+  height: 800px;
+  position: relative;
 
   .glaucoma-container {
     display: flex;
@@ -485,6 +524,7 @@ html {
     justify-content: space-between;
     border-radius: 1.5em;
     background-color: var(--color9);
+    gap: 1em;
 
     .text-container {
       width: 50%;
@@ -516,10 +556,176 @@ html {
       }
     }
   }
+  .overlay {
+    top: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0;
+  }
+  .glaucoma-modal {
+    width: 80%;
+    height: 70vh;
+    padding: 1.8em;
+    border-radius: 1.5em;
+    z-index: 3;
+    opacity: 0;
+    background-color: var(--color9);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%) scale(1.2);
+    pointer-events: none;
+
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 10%;
+      color: var(--color8);
+      gap: 0.5em;
+
+      .title {
+        width: 100%;
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: 700;
+        margin-bottom: 0.5em;
+        margin-top: 1.5em;
+      }
+      .subtitle {
+        font-size: 1.25em;
+        font-weight: 600;
+        margin-bottom: 0.5em;
+        margin-top: 2em;
+      }
+      .text {
+        line-height: 1.2em;
+        font-size: 1em;
+        font-weight: 400;
+        margin-left: 0.5em;
+      }
+      .list {
+        margin-left: 2.5em;
+        .item {
+          margin-bottom: 0.5em;
+        }
+        .sub-item {
+          margin-bottom: 0.5em;
+        }
+      }
+      .sub {
+        border-bottom: 1px solid var(--color8);
+        margin-bottom: 0.5em;
+      }
+      .descriptive-list {
+        margin-top: 1em;
+        .d-title {
+          margin-top: 0.8em;
+          font-size: 1.1em;
+        }
+        .d-item {
+          margin-left: 0.5em;
+        }
+      }
+
+      .image-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+        margin: 1em 0;
+        gap: 1em;
+
+        .card {
+          width: 45%;
+          border-radius: 5px;
+          overflow: hidden;
+          position: relative;
+          .image {
+            transition: all 200ms linear;
+            object-fit: cover;
+            border-radius: 5px;
+            width: 100%;
+          }
+
+          .description {
+            transition: all 200ms linear;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--color10);
+          }
+
+          &:hover {
+            .image {
+              filter: blur(3px) brightness(40%);
+            }
+            .description {
+              opacity: 1;
+            }
+          }
+        }
+        .card-pdf {
+          width: 45%;
+          border-radius: 5px;
+
+          .pdf {
+            width: 100%;
+            height: 100%;
+          }
+          .description {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .button-close-glaucoma-modal {
+      position: fixed;
+      right: 1.5em;
+      top: 1.5em;
+      background-color: transparent;
+      border: none;
+      .icon {
+        font-size: 3em;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .button-show-glaucoma-modal {
+    width: max-content;
+    padding: 9px 24px;
+    border-radius: 10px;
+    font-size: 1em;
+    color: var(--color10);
+    background-color: var(--color8);
+    filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.1));
+    transition: all 100ms linear;
+
+    &:hover {
+      filter: drop-shadow(0 5px 4px rgba(0, 0, 0, 0.15));
+      cursor: pointer;
+    }
+  }
 
   @media (max-width: 730px) {
     padding: 1em 0;
-    height: 900px;
+    height: 800px;
 
     .glaucoma-container {
       flex-direction: column;
@@ -546,6 +752,155 @@ html {
         }
       }
     }
+  }
+  .glaucoma-modal {
+    width: 90%;
+    height: 80vh;
+    padding: 1.5em 0;
+    border-radius: 1.5em;
+    z-index: 3;
+    opacity: 0;
+    background-color: var(--color9);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%) scale(1.2);
+    pointer-events: none;
+
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 5%;
+      color: var(--color8);
+      gap: 0.5em;
+
+      .title {
+        width: 100%;
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: 700;
+        margin-bottom: 0.5em;
+        margin-top: 1.5em;
+      }
+      .subtitle {
+        font-size: 1.25em;
+        font-weight: 600;
+        margin-bottom: 0.5em;
+        margin-top: 2em;
+      }
+      .text {
+        line-height: 1.2em;
+        font-size: 1em;
+        font-weight: 400;
+        margin-left: 0.5em;
+      }
+      .list {
+        margin-left: 2.5em;
+        .item {
+          margin-bottom: 0.5em;
+        }
+        .sub-item {
+          margin-bottom: 0.5em;
+        }
+      }
+      .sub {
+        border-bottom: 1px solid var(--color8);
+        margin-bottom: 0.5em;
+      }
+      .descriptive-list {
+        margin-top: 1em;
+        .d-title {
+          margin-top: 0.8em;
+          font-size: 1.1em;
+        }
+        .d-item {
+          margin-left: 0.5em;
+        }
+      }
+
+      .image-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+        margin: 1em 0;
+        gap: 1em;
+
+        .card {
+          width: 45%;
+          border-radius: 5px;
+          overflow: hidden;
+          position: relative;
+          .image {
+            transition: all 200ms linear;
+            object-fit: cover;
+            border-radius: 5px;
+            width: 100%;
+          }
+
+          .description {
+            transition: all 200ms linear;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--color10);
+          }
+
+          &:hover {
+            .image {
+              filter: blur(3px) brightness(40%);
+            }
+            .description {
+              opacity: 1;
+            }
+          }
+        }
+        .card-pdf {
+          width: 45%;
+          border-radius: 5px;
+
+          .pdf {
+            width: 100%;
+            height: 100%;
+          }
+          .description {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .button-close-glaucoma-modal {
+      position: fixed;
+      right: 1.5em;
+      top: 1.5em;
+      background-color: transparent;
+      border: none;
+      .icon {
+        font-size: 3em;
+      }
+    }
+  }
+}
+
+.glaucoma-active {
+  .glaucoma-modal {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .overlay {
+    opacity: 1;
+    pointer-events: auto;
   }
 }
 
@@ -648,6 +1003,7 @@ html {
 
   .swiper-pagination {
     position: static;
+    z-index: 0;
   }
 
   .swiper-horizontal
@@ -671,6 +1027,7 @@ html {
     .swiper-button-prev,
     .swiper-button-next {
       position: static;
+      z-index: 0;
 
       &::after {
         content: "";
@@ -701,12 +1058,11 @@ html {
           }
           .card-body {
             background-color: #ffffff;
-            border-radius: 1.2rem 1.2rem 0 0;
+            border-radius: 1.2rem;
             height: calc(50% + 1.2rem);
             width: 100%;
             position: absolute;
             bottom: 0;
-            filter: drop-shadow(#1f1f1f 0 -5px 25px);
             display: flex;
             flex-direction: column;
             gap: 10%;
@@ -737,6 +1093,25 @@ html {
               color: var(--color10);
               background-color: var(--color3);
             }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 730px) {
+    height: 500px;
+    margin-bottom: 2em;
+    .subtitle {
+      margin-bottom: 1em;
+    }
+    .container {
+      .swiper {
+        height: 400px;
+        .swiper-wrapper {
+          .swiper-slide,
+          .swiper-slide-active {
+            height: 380px;
           }
         }
       }
