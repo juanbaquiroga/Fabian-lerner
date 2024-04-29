@@ -34,7 +34,7 @@ html {
 
 .over-header {
   background-color: var(--color1);
-  color: white;
+  color: var(--color10);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -46,18 +46,25 @@ html {
     display: flex;
     gap: 2em;
     .icon-header {
-      color: #ffffff;
+      color: var(--color10);
       font-size: 20px;
     }
 
     .direction {
       display: flex;
       gap: 0.5em;
+
+      .text{
+        color: var(--color10);
+      }
     }
 
     .tel {
       display: flex;
       gap: 0.5em;
+      .text{
+        color:var(--color10);
+      }
     }
     .social {
       display: flex;
@@ -756,7 +763,7 @@ html {
   .glaucoma-modal {
     width: 90%;
     height: 80vh;
-    padding: 1.5em 0;
+    padding: 0 0 1.5em 0;
     border-radius: 1.5em;
     z-index: 3;
     opacity: 0;
@@ -880,9 +887,9 @@ html {
     }
 
     .button-close-glaucoma-modal {
-      position: fixed;
-      right: 1.5em;
+      position: sticky;
       top: 1.5em;
+      align-self: end;
       background-color: transparent;
       border: none;
       .icon {
@@ -998,12 +1005,13 @@ html {
   align-items: center;
   justify-content: center;
   padding: var(--padding);
-  height: 800px;
+  margin-bottom: 5em;
   gap: 0;
 
   .swiper-pagination {
     position: static;
     z-index: 0;
+    margin-bottom: 50px;
   }
 
   .swiper-horizontal
@@ -1011,10 +1019,15 @@ html {
   .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
     transform: translateX(0);
   }
-  .subtitle {
+  .title {
     color: var(--color3);
     font-size: 2em;
     margin-bottom: 2.5em;
+  }
+  .subtitle{
+    color: var(--color3);
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
   }
 
   .container {
@@ -1097,11 +1110,50 @@ html {
         }
       }
     }
+
+    
+  }
+  .container-books{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+
+    .book {
+      height: 270px;
+      position: relative;
+      border-radius: 5px;
+      overflow: hidden;
+      .image {
+        transition: all 200ms linear;
+        border-radius: 5px;
+        height: 100%;
+      }
+      .title {
+        transition: all 200ms linear;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--color10);
+        font-size: 1em;
+      }
+  
+      &:hover {
+        .image {
+          filter: blur(3px) brightness(40%);
+        }
+        .title {
+          opacity: 1;
+        }
+      } 
+    }
   }
 
   @media (max-width: 730px) {
-    height: 500px;
-    margin-bottom: 2em;
     .subtitle {
       margin-bottom: 1em;
     }
@@ -1112,7 +1164,33 @@ html {
           .swiper-slide,
           .swiper-slide-active {
             height: 380px;
+            .card-body {
+              .text-container {
+                height: calc(90% - 1rem);
+                gap: 0.5em;
+  
+                .card-title {
+                  font-size: 0.9em;
+                  font-weight: 400;
+                }
+                .card-text {
+                  font-size: 0.8em;
+                }
+              }
+              .card-button {
+                font-size: 0.8em;
+              }
+            }
           }
+        }
+      }
+    }
+    .container-books{
+      .book{
+        height: 170px;
+        width: auto;
+        .image{
+          height: 100%;
         }
       }
     }
@@ -1193,6 +1271,10 @@ html {
           display: flex;
           align-items: center;
           gap: 0.5em;
+        }
+        a{
+          text-decoration: none;
+          color: var(--color10);
         }
       }
     }
