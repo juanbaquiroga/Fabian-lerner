@@ -8,9 +8,10 @@
   --color5: #00b4d8;
   --color6: #0609c6;
   --color7: #b6ddea;
-  --color8: #929292;
+  --color8: #787878;
   --color9: #fad1ad;
-  --color10: #ebebeb;
+  --color10: #ffffff;
+  --color11: #e4e4e4;
   --padding: 0 9%;
 }
 * {
@@ -22,7 +23,7 @@
   text-decoration: none;
 }
 body {
-  background-color: var(--color10);
+  background-color: var(--color11);
 }
 html {
   scroll-behavior: smooth;
@@ -100,11 +101,7 @@ html {
   .logo {
     font-size: 1.8em;
     font-weight: 600;
-    color: #ffffff;
-
-    .color {
-      color: var(--color9);
-    }
+    color: var(--color10);
   }
   .topContainer {
     display: none;
@@ -121,7 +118,11 @@ html {
       list-style: none;
 
       .link {
-        color: var(--color8);
+        color: var(--color10);
+        transition: all 200ms ;
+        &:hover{
+          color: var(--color8);
+        }
       }
     }
   }
@@ -215,11 +216,10 @@ html {
 
       .item {
         .link {
-          color: var(--color8);
+          color: var(--color10);
           font-size: 1.5em;
 
           &:hover {
-            color: red;
             opacity: 0.1;
           }
         }
@@ -246,7 +246,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 900px;
+  height: calc(100vh - 4.5em);
 
   .ellipse {
     z-index: -1;
@@ -269,19 +269,14 @@ html {
       max-width: 500px;
       gap: 10px;
       .main-title {
-        color: #ffffff;
-        font-size: 2.5em;
+        color: var(--color10);
+        font-size: 2.7em;
         font-weight: 700;
         height: 1em;
-
-        .title-span {
-          height: 1em;
-          color: var(--color9);
-        }
       }
       .text {
-        color: #ffffff;
-        font-size: 1em;
+        color: var(--color10);
+        font-size: 1.2em;
         font-weight: 300;
       }
     }
@@ -524,7 +519,7 @@ html {
     display: flex;
     width: 100%;
     max-width: 1400px;
-    height: 500px;
+    height: 550px;
     padding: 1.8em;
     align-items: center;
     justify-content: space-between;
@@ -547,6 +542,7 @@ html {
         font-size: 2em;
       }
       .text {
+        line-height: 1.5em;
         font-weight: 400;
         text-align: center;
       }
@@ -599,6 +595,9 @@ html {
       padding: 0 10%;
       color: var(--color8);
       gap: 0.5em;
+      p,li,dd{
+        line-height: 2.5em;
+      }
 
       .title {
         width: 100%;
@@ -615,7 +614,7 @@ html {
         margin-top: 2em;
       }
       .text {
-        line-height: 1.2em;
+        line-height: 2.5em;
         font-size: 1em;
         font-weight: 400;
         margin-left: 0.5em;
@@ -683,18 +682,6 @@ html {
             }
           }
         }
-        .card-pdf {
-          width: 45%;
-          border-radius: 5px;
-
-          .pdf {
-            width: 100%;
-            height: 100%;
-          }
-          .description {
-            text-align: center;
-          }
-        }
       }
     }
 
@@ -745,6 +732,10 @@ html {
       .text-container {
         width: 100%;
         max-width: none;
+        .text{
+          font-size: 1.1em;
+          line-height: 1.5;
+        }
       }
 
       .video-container {
@@ -930,7 +921,7 @@ html {
     max-width: 1400px;
 
     .subtitle {
-      color: var(--color4);
+      color: var(--color10);
       font-size: 2em;
     }
 
@@ -1361,18 +1352,29 @@ html {
 
 .button-contacto {
   width: min-content;
-  padding: 9px 24px;
+  padding: 6px 18px;
   border-radius: 10px;
   font-size: 1em;
-  color: var(--color8);
-  background-color: var(--color9);
-  drop-shadow:0 5px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+  color: var(--color3);
   transition: all 100ms linear;
-
+  background-color: var(--color10);
   &:hover {
-    box-shadow:0 8px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
   }
 }
+/* .button-contacto {
+  width: min-content;
+  padding: 6px 18px;
+  border-radius: 10px;
+  font-size: 1em;
+  color: var(--color10);
+  transition: all 100ms linear;
+  border: 1px solid var(--color10);
+  &:hover {
+    border-radius: 4px;
+  }
+} */
 .text {
   font-size: 1.1em;
 }
