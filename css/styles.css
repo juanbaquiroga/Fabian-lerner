@@ -300,6 +300,7 @@ html {
   @media (max-width: 730px) {
     justify-content: flex-start;
     padding: 3em 0 0 0;
+    height: calc(100vh - 2em);
 
     .ellipse {
       height: 900px;
@@ -320,9 +321,11 @@ html {
         align-items: center;
         .main-title {
           text-align: center;
+          font-size: 1.7em;
         }
         .text {
           text-align: center;
+          font-size: 1.1em;
         }
       }
       .main-img-container {
@@ -596,7 +599,7 @@ html {
       color: var(--color8);
       gap: 0.5em;
       p,li,dd{
-        line-height: 2.5em;
+        line-height: 2.5;
       }
 
       .title {
@@ -608,16 +611,16 @@ html {
         margin-top: 1.5em;
       }
       .subtitle {
-        font-size: 1.25em;
+        font-size: 1.3em;
         font-weight: 600;
         margin-bottom: 0.5em;
         margin-top: 2em;
       }
-      .text {
-        line-height: 2.5em;
-        font-size: 1em;
+      p.text {
+        font-size: 1.1em;
         font-weight: 400;
         margin-left: 0.5em;
+        line-height: 2.5;
       }
       .list {
         margin-left: 2.5em;
@@ -734,7 +737,7 @@ html {
         max-width: none;
         .text{
           font-size: 1.1em;
-          line-height: 1.5;
+          line-height: 1.5em;
         }
       }
 
