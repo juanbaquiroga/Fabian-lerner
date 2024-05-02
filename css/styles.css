@@ -4,10 +4,8 @@
   --color1: #023e8a;
   --color2: #2aadf3;
   --color3: #0424a8;
-  --color4: #90e0ef;
-  --color5: #00b4d8;
-  --color6: #0609c6;
-  --color7: #b6ddea;
+  --color4: #000000;
+  --color7: #cdcdcd;
   --color8: #787878;
   --color9: #fad1ad;
   --color10: #ffffff;
@@ -39,13 +37,12 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 2em;
-  padding: 0 1em;
-  font-size: 0.9em;
+  padding: 2px 0.5em;
+  font-size: 1em;
 
   .container {
     display: flex;
-    gap: 2em;
+    gap: 1em;
     .icon-header {
       color: var(--color10);
       font-size: 20px;
@@ -53,7 +50,7 @@ html {
 
     .direction {
       display: flex;
-      gap: 0.5em;
+      flex-wrap: wrap;
 
       .text{
         color: var(--color10);
@@ -62,14 +59,16 @@ html {
 
     .tel {
       display: flex;
+      align-items: center;
       gap: 0.5em;
       .text{
+        width: max-content;
         color:var(--color10);
       }
     }
     .social {
       display: flex;
-      gap: 0.5em;
+      gap: 0.3em;
 
       .link {
         .icon-header:hover {
@@ -177,7 +176,7 @@ html {
     .logoResponsive {
       font-size: 1.8em;
       font-weight: 600;
-      color: #ffffff;
+      color: var(--color10);
 
       .color {
         color: var(--color9);
@@ -253,7 +252,7 @@ html {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 950px;
+    height: 110vh;
   }
   .main-container {
     width: 100%;
@@ -281,8 +280,8 @@ html {
       }
     }
     .main-img-container {
-      height: 100%;
-      width: 60%;
+      height: 80%;
+      aspect-ratio: 3/4;
       max-width: 512px;
       max-height: 676px;
       border-radius: 50px 10px 50px 50px;
@@ -527,7 +526,7 @@ html {
     align-items: center;
     justify-content: space-between;
     border-radius: 1.5em;
-    background-color: var(--color9);
+    background-color: var(--color7);
     gap: 1em;
 
     .text-container {
@@ -538,14 +537,14 @@ html {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: var(--color8);
+      color: var(--color4);
       gap: 1em;
 
       .subtitle {
         font-size: 2em;
       }
       .text {
-        line-height: 1.5em;
+        line-height: 2.5;
         font-weight: 400;
         text-align: center;
       }
@@ -578,7 +577,7 @@ html {
     border-radius: 1.5em;
     z-index: 3;
     opacity: 0;
-    background-color: var(--color9);
+    background-color: var(--color7);
     position: fixed;
     left: 50%;
     top: 50%;
@@ -596,7 +595,7 @@ html {
       flex-direction: column;
       justify-content: center;
       padding: 0 10%;
-      color: var(--color8);
+      color: var(--color4);
       gap: 0.5em;
       p,li,dd{
         line-height: 2.5;
@@ -632,7 +631,7 @@ html {
         }
       }
       .sub {
-        border-bottom: 1px solid var(--color8);
+        border-bottom: 1px solid var(--color4);
         margin-bottom: 0.5em;
       }
       .descriptive-list {
@@ -721,13 +720,13 @@ html {
 
   @media (max-width: 730px) {
     padding: 1em 0;
-    height: 800px;
+    height: 1100px;
 
     .glaucoma-container {
       flex-direction: column;
       width: 100%;
       height: auto;
-      max-height: 900px;
+      max-height: 1000px;
       padding: 1em;
       border-radius: 0;
       gap: 1.5em;
@@ -737,7 +736,7 @@ html {
         max-width: none;
         .text{
           font-size: 1.1em;
-          line-height: 1.5em;
+          line-height: 2.5;
         }
       }
 
@@ -760,7 +759,7 @@ html {
     border-radius: 1.5em;
     z-index: 3;
     opacity: 0;
-    background-color: var(--color9);
+    background-color: var(--color7);
     position: fixed;
     left: 50%;
     top: 50%;
@@ -778,7 +777,7 @@ html {
       flex-direction: column;
       justify-content: center;
       padding: 0 5%;
-      color: var(--color8);
+      color: var(--color4);
       gap: 0.5em;
 
       .title {
@@ -811,7 +810,7 @@ html {
         }
       }
       .sub {
-        border-bottom: 1px solid var(--color8);
+        border-bottom: 1px solid var(--color4);
         margin-bottom: 0.5em;
       }
       .descriptive-list {
@@ -942,6 +941,7 @@ html {
         .text {
           color: var(--color10);
           font-weight: 300;
+          line-height: 2;
         }
       }
     }
@@ -962,7 +962,7 @@ html {
       max-width: 1400px;
 
       .subtitle {
-        color: var(--color4);
+        color: var(--color10);
         font-size: 2em;
       }
 
@@ -1000,6 +1000,7 @@ html {
   padding: var(--padding);
   margin-bottom: 5em;
   gap: 0;
+  position: relative;
 
   .swiper-pagination {
     position: static;
@@ -1264,10 +1265,10 @@ html {
           display: flex;
           align-items: center;
           gap: 0.5em;
-        }
-        a{
-          text-decoration: none;
-          color: var(--color10);
+          .link{
+            text-decoration: none;
+            color: var(--color10);
+          }
         }
       }
     }
