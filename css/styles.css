@@ -280,10 +280,10 @@ html {
       }
     }
     .main-img-container {
-      height: 80%;
+      height: 100%;
       aspect-ratio: 3/4;
-      max-width: 512px;
-      max-height: 676px;
+      max-width: 40%;
+      max-height: 990px;
       border-radius: 50px 10px 50px 50px;
       background-color: var(--color2);
       overflow: hidden;
