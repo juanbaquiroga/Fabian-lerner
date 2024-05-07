@@ -1,5 +1,4 @@
 const swiper = new Swiper(".swiper", {
-  // Optional parameters
   direction: "horizontal",
   loop: true,
   speed: 400,
@@ -25,7 +24,7 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 1,
     },
     750: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     900: {
       slidesPerView: 3,
@@ -37,7 +36,6 @@ const swiper = new Swiper(".swiper", {
 });
 
 const swiper2 = new Swiper(".swiper-books", {
-  // Optional parameters
   direction: "horizontal",
   loop: true,
   speed: 400,
